@@ -1,0 +1,10 @@
+{
+  "name": "sql-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4106 --directory sql-patterns-site",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

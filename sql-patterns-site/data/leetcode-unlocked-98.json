@@ -1,0 +1,693 @@
+{
+  "source": "https://leetcode.com/problemset/database/",
+  "verifiedAt": "2026-08-27",
+  "count": 98,
+  "problems": [
+    {
+      "difficulty": "Easy",
+      "id": 175,
+      "paidOnly": false,
+      "slug": "combine-two-tables",
+      "title": "Combine Two Tables"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 176,
+      "paidOnly": false,
+      "slug": "second-highest-salary",
+      "title": "Second Highest Salary"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 177,
+      "paidOnly": false,
+      "slug": "nth-highest-salary",
+      "title": "Nth Highest Salary"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 178,
+      "paidOnly": false,
+      "slug": "rank-scores",
+      "title": "Rank Scores"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 180,
+      "paidOnly": false,
+      "slug": "consecutive-numbers",
+      "title": "Consecutive Numbers"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 181,
+      "paidOnly": false,
+      "slug": "employees-earning-more-than-their-managers",
+      "title": "Employees Earning More Than Their Managers"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 182,
+      "paidOnly": false,
+      "slug": "duplicate-emails",
+      "title": "Duplicate Emails"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 183,
+      "paidOnly": false,
+      "slug": "customers-who-never-order",
+      "title": "Customers Who Never Order"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 184,
+      "paidOnly": false,
+      "slug": "department-highest-salary",
+      "title": "Department Highest Salary"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 185,
+      "paidOnly": false,
+      "slug": "department-top-three-salaries",
+      "title": "Department Top Three Salaries"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 196,
+      "paidOnly": false,
+      "slug": "delete-duplicate-emails",
+      "title": "Delete Duplicate Emails"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 197,
+      "paidOnly": false,
+      "slug": "rising-temperature",
+      "title": "Rising Temperature"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 262,
+      "paidOnly": false,
+      "slug": "trips-and-users",
+      "title": "Trips and Users"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 511,
+      "paidOnly": false,
+      "slug": "game-play-analysis-i",
+      "title": "Game Play Analysis I"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 550,
+      "paidOnly": false,
+      "slug": "game-play-analysis-iv",
+      "title": "Game Play Analysis IV"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 570,
+      "paidOnly": false,
+      "slug": "managers-with-at-least-5-direct-reports",
+      "title": "Managers with at Least 5 Direct Reports"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 577,
+      "paidOnly": false,
+      "slug": "employee-bonus",
+      "title": "Employee Bonus"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 584,
+      "paidOnly": false,
+      "slug": "find-customer-referee",
+      "title": "Find Customer Referee"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 585,
+      "paidOnly": false,
+      "slug": "investments-in-2016",
+      "title": "Investments in 2016"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 586,
+      "paidOnly": false,
+      "slug": "customer-placing-the-largest-number-of-orders",
+      "title": "Customer Placing the Largest Number of Orders"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 595,
+      "paidOnly": false,
+      "slug": "big-countries",
+      "title": "Big Countries"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 596,
+      "paidOnly": false,
+      "slug": "classes-with-at-least-5-students",
+      "title": "Classes With at Least 5 Students"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 601,
+      "paidOnly": false,
+      "slug": "human-traffic-of-stadium",
+      "title": "Human Traffic of Stadium"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 602,
+      "paidOnly": false,
+      "slug": "friend-requests-ii-who-has-the-most-friends",
+      "title": "Friend Requests II: Who Has the Most Friends"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 607,
+      "paidOnly": false,
+      "slug": "sales-person",
+      "title": "Sales Person"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 608,
+      "paidOnly": false,
+      "slug": "tree-node",
+      "title": "Tree Node"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 610,
+      "paidOnly": false,
+      "slug": "triangle-judgement",
+      "title": "Triangle Judgement"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 619,
+      "paidOnly": false,
+      "slug": "biggest-single-number",
+      "title": "Biggest Single Number"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 620,
+      "paidOnly": false,
+      "slug": "not-boring-movies",
+      "title": "Not Boring Movies"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 626,
+      "paidOnly": false,
+      "slug": "exchange-seats",
+      "title": "Exchange Seats"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 627,
+      "paidOnly": false,
+      "slug": "swap-sex-of-employees",
+      "title": "Swap Sex of Employees"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1045,
+      "paidOnly": false,
+      "slug": "customers-who-bought-all-products",
+      "title": "Customers Who Bought All Products"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1050,
+      "paidOnly": false,
+      "slug": "actors-and-directors-who-cooperated-at-least-three-times",
+      "title": "Actors and Directors Who Cooperated At Least Three Times"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1068,
+      "paidOnly": false,
+      "slug": "product-sales-analysis-i",
+      "title": "Product Sales Analysis I"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1070,
+      "paidOnly": false,
+      "slug": "product-sales-analysis-iii",
+      "title": "Product Sales Analysis III"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1075,
+      "paidOnly": false,
+      "slug": "project-employees-i",
+      "title": "Project Employees I"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1084,
+      "paidOnly": false,
+      "slug": "sales-analysis-iii",
+      "title": "Sales Analysis III"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1141,
+      "paidOnly": false,
+      "slug": "user-activity-for-the-past-30-days-i",
+      "title": "User Activity for the Past 30 Days I"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1148,
+      "paidOnly": false,
+      "slug": "article-views-i",
+      "title": "Article Views I"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1158,
+      "paidOnly": false,
+      "slug": "market-analysis-i",
+      "title": "Market Analysis I"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1164,
+      "paidOnly": false,
+      "slug": "product-price-at-a-given-date",
+      "title": "Product Price at a Given Date"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1174,
+      "paidOnly": false,
+      "slug": "immediate-food-delivery-ii",
+      "title": "Immediate Food Delivery II"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1179,
+      "paidOnly": false,
+      "slug": "reformat-department-table",
+      "title": "Reformat Department Table"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1193,
+      "paidOnly": false,
+      "slug": "monthly-transactions-i",
+      "title": "Monthly Transactions I"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1204,
+      "paidOnly": false,
+      "slug": "last-person-to-fit-in-the-bus",
+      "title": "Last Person to Fit in the Bus"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1211,
+      "paidOnly": false,
+      "slug": "queries-quality-and-percentage",
+      "title": "Queries Quality and Percentage"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1251,
+      "paidOnly": false,
+      "slug": "average-selling-price",
+      "title": "Average Selling Price"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1280,
+      "paidOnly": false,
+      "slug": "students-and-examinations",
+      "title": "Students and Examinations"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1321,
+      "paidOnly": false,
+      "slug": "restaurant-growth",
+      "title": "Restaurant Growth"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1327,
+      "paidOnly": false,
+      "slug": "list-the-products-ordered-in-a-period",
+      "title": "List the Products Ordered in a Period"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1341,
+      "paidOnly": false,
+      "slug": "movie-rating",
+      "title": "Movie Rating"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1378,
+      "paidOnly": false,
+      "slug": "replace-employee-id-with-the-unique-identifier",
+      "title": "Replace Employee ID With The Unique Identifier"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1393,
+      "paidOnly": false,
+      "slug": "capital-gainloss",
+      "title": "Capital Gain/Loss"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1407,
+      "paidOnly": false,
+      "slug": "top-travellers",
+      "title": "Top Travellers"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1484,
+      "paidOnly": false,
+      "slug": "group-sold-products-by-the-date",
+      "title": "Group Sold Products By The Date"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1517,
+      "paidOnly": false,
+      "slug": "find-users-with-valid-e-mails",
+      "title": "Find Users With Valid E-Mails"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1527,
+      "paidOnly": false,
+      "slug": "patients-with-a-condition",
+      "title": "Patients With a Condition"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1581,
+      "paidOnly": false,
+      "slug": "customer-who-visited-but-did-not-make-any-transactions",
+      "title": "Customer Who Visited but Did Not Make Any Transactions"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1587,
+      "paidOnly": false,
+      "slug": "bank-account-summary-ii",
+      "title": "Bank Account Summary II"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1633,
+      "paidOnly": false,
+      "slug": "percentage-of-users-attended-a-contest",
+      "title": "Percentage of Users Attended a Contest"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1661,
+      "paidOnly": false,
+      "slug": "average-time-of-process-per-machine",
+      "title": "Average Time of Process per Machine"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1667,
+      "paidOnly": false,
+      "slug": "fix-names-in-a-table",
+      "title": "Fix Names in a Table"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1683,
+      "paidOnly": false,
+      "slug": "invalid-tweets",
+      "title": "Invalid Tweets"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1693,
+      "paidOnly": false,
+      "slug": "daily-leads-and-partners",
+      "title": "Daily Leads and Partners"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1729,
+      "paidOnly": false,
+      "slug": "find-followers-count",
+      "title": "Find Followers Count"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1731,
+      "paidOnly": false,
+      "slug": "the-number-of-employees-which-report-to-each-employee",
+      "title": "The Number of Employees Which Report to Each Employee"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1741,
+      "paidOnly": false,
+      "slug": "find-total-time-spent-by-each-employee",
+      "title": "Find Total Time Spent by Each Employee"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1757,
+      "paidOnly": false,
+      "slug": "recyclable-and-low-fat-products",
+      "title": "Recyclable and Low Fat Products"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1789,
+      "paidOnly": false,
+      "slug": "primary-department-for-each-employee",
+      "title": "Primary Department for Each Employee"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1795,
+      "paidOnly": false,
+      "slug": "rearrange-products-table",
+      "title": "Rearrange Products Table"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1873,
+      "paidOnly": false,
+      "slug": "calculate-special-bonus",
+      "title": "Calculate Special Bonus"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1890,
+      "paidOnly": false,
+      "slug": "the-latest-login-in-2020",
+      "title": "The Latest Login in 2020"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1907,
+      "paidOnly": false,
+      "slug": "count-salary-categories",
+      "title": "Count Salary Categories"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 1934,
+      "paidOnly": false,
+      "slug": "confirmation-rate",
+      "title": "Confirmation Rate"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1965,
+      "paidOnly": false,
+      "slug": "employees-with-missing-information",
+      "title": "Employees With Missing Information"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 1978,
+      "paidOnly": false,
+      "slug": "employees-whose-manager-left-the-company",
+      "title": "Employees Whose Manager Left the Company"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 2356,
+      "paidOnly": false,
+      "slug": "number-of-unique-subjects-taught-by-each-teacher",
+      "title": "Number of Unique Subjects Taught by Each Teacher"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3220,
+      "paidOnly": false,
+      "slug": "odd-and-even-transactions",
+      "title": "Odd and Even Transactions"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 3374,
+      "paidOnly": false,
+      "slug": "first-letter-capitalization-ii",
+      "title": "First Letter Capitalization II"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3421,
+      "paidOnly": false,
+      "slug": "find-students-who-improved",
+      "title": "Find Students Who Improved"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 3436,
+      "paidOnly": false,
+      "slug": "find-valid-emails",
+      "title": "Find Valid Emails"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 3451,
+      "paidOnly": false,
+      "slug": "find-invalid-ip-addresses",
+      "title": "Find Invalid IP Addresses"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 3465,
+      "paidOnly": false,
+      "slug": "find-products-with-valid-serial-numbers",
+      "title": "Find Products with Valid Serial Numbers"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3475,
+      "paidOnly": false,
+      "slug": "dna-pattern-recognition",
+      "title": "DNA Pattern Recognition"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 3482,
+      "paidOnly": false,
+      "slug": "analyze-organization-hierarchy",
+      "title": "Analyze Organization Hierarchy"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3497,
+      "paidOnly": false,
+      "slug": "analyze-subscription-conversion",
+      "title": "Analyze Subscription Conversion"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3521,
+      "paidOnly": false,
+      "slug": "find-product-recommendation-pairs",
+      "title": "Find Product Recommendation Pairs"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 3554,
+      "paidOnly": false,
+      "slug": "find-category-recommendation-pairs",
+      "title": "Find Category Recommendation Pairs"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3564,
+      "paidOnly": false,
+      "slug": "seasonal-sales-analysis",
+      "title": "Seasonal Sales Analysis"
+    },
+    {
+      "difficulty": "Easy",
+      "id": 3570,
+      "paidOnly": false,
+      "slug": "find-books-with-no-available-copies",
+      "title": "Find Books with No Available Copies"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3580,
+      "paidOnly": false,
+      "slug": "find-consistently-improving-employees",
+      "title": "Find Consistently Improving Employees"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3586,
+      "paidOnly": false,
+      "slug": "find-covid-recovery-patients",
+      "title": "Find COVID Recovery Patients"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3601,
+      "paidOnly": false,
+      "slug": "find-drivers-with-improved-fuel-efficiency",
+      "title": "Find Drivers with Improved Fuel Efficiency"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3611,
+      "paidOnly": false,
+      "slug": "find-overbooked-employees",
+      "title": "Find Overbooked Employees"
+    },
+    {
+      "difficulty": "Hard",
+      "id": 3617,
+      "paidOnly": false,
+      "slug": "find-students-with-study-spiral-pattern",
+      "title": "Find Students with Study Spiral Pattern"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3626,
+      "paidOnly": false,
+      "slug": "find-stores-with-inventory-imbalance",
+      "title": "Find Stores with Inventory Imbalance"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3642,
+      "paidOnly": false,
+      "slug": "find-books-with-polarized-opinions",
+      "title": "Find Books with Polarized Opinions"
+    },
+    {
+      "difficulty": "Medium",
+      "id": 3657,
+      "paidOnly": false,
+      "slug": "find-loyal-customers",
+      "title": "Find Loyal Customers"
+    }
+  ]
+}

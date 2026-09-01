@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A pattern-first SQL field guide and complete LeetCode Database problem catalog for MySQL and PostgreSQL.">
+  <meta name="theme-color" content="#111a24">
+  <title>SQL Atlas — LeetCode SQL by Pattern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#problems">Skip to problems</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="SQL Atlas home">
+      <span class="brand-mark" aria-hidden="true">SELECT</span>
+      <span>SQL Atlas</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#toolkit">Toolkit</a>
+      <a href="#patterns">Patterns</a>
+      <a href="#problems">Problems</a>
+      <a href="#playbook">Playbook</a>
+    </nav>
+    <button class="progress-button" id="progressButton" type="button">
+      <span class="progress-dot" aria-hidden="true"></span>
+      <span id="progressLabel">0 solved</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">MySQL + PostgreSQL · pattern-first practice</p>
+        <h1 id="hero-title">Stop memorizing queries.<br><em>Recognize the shape.</em></h1>
+        <p class="hero-intro">A staff-level SQL field guide with every current LeetCode Database problem organized by the reusable idea that solves it.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#toolkit">Start with the theory <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="#problems">Browse 98 problems</a>
+        </div>
+      </div>
+      <div class="query-card" aria-label="Example SQL query">
+        <div class="query-card-header">
+          <span>pattern_05.sql</span>
+          <span class="status-pill">portable</span>
+        </div>
+        <pre><code><span class="code-muted">-- top N per group</span>
+<span class="code-keyword">WITH</span> ranked <span class="code-keyword">AS</span> (
+  <span class="code-keyword">SELECT</span> *,
+    <span class="code-fn">DENSE_RANK</span>() <span class="code-keyword">OVER</span> (
+      <span class="code-keyword">PARTITION BY</span> team_id
+      <span class="code-keyword">ORDER BY</span> score <span class="code-keyword">DESC</span>
+    ) <span class="code-keyword">AS</span> place
+  <span class="code-keyword">FROM</span> results
+)
+<span class="code-keyword">SELECT</span> *
+<span class="code-keyword">FROM</span> ranked
+<span class="code-keyword">WHERE</span> place &lt;= 3;</code></pre>
+        <div class="query-card-footer">
+          <span>Pattern: ranking</span>
+          <span>Complexity: O(n log n)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Catalog overview">
+      <div><strong id="problemCount">98</strong><span>Unlocked problems</span></div>
+      <div><strong id="patternCount">15</strong><span>Reusable patterns</span></div>
+      <div><strong>2</strong><span>SQL dialects</span></div>
+      <div><strong id="solutionCount">98</strong><span>MySQL + PostgreSQL</span></div>
+    </section>
+
+    <section class="section toolkit" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SQL toolkit · learn the language</p>
+          <h2 id="toolkit-title">Know what every tool is for.</h2>
+        </div>
+        <p>Learn the operator, when to reach for it, how to reason with it, the failure modes, and the MySQL/PostgreSQL differences.</p>
+      </div>
+      <div class="toolkit-layout">
+        <div class="tool-index" id="toolIndex" role="tablist" aria-label="SQL topics"></div>
+        <div class="tool-lesson" id="toolLesson" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="patterns" aria-labelledby="patterns-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The mental index</p>
+          <h2 id="patterns-title">Every question has a shape.</h2>
+        </div>
+        <p>Start with the data relationship, not the syntax. These patterns cover the recurring structures behind SQL interview questions.</p>
+      </div>
+      <div class="pattern-grid" id="patternGrid" aria-live="polite"></div>
+      <div class="pattern-lesson" id="patternLesson" aria-live="polite"></div>
+    </section>
+
+    <section class="catalog-section" id="problems" aria-labelledby="problems-title">
+      <div class="catalog-heading">
+        <div>
+          <p class="eyebrow">98 unlocked LeetCode problems</p>
+          <h2 id="problems-title">Find the pattern. Write the query.</h2>
+        </div>
+        <p id="catalogSummary">Loading the catalog…</p>
+      </div>
+
+      <div class="catalog-controls" aria-label="Problem filters">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <span class="sr-only">Search problems</span>
+          <input id="searchInput" type="search" placeholder="Search by title, number, or pattern…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="filter-row" id="difficultyFilters" aria-label="Difficulty">
+          <button class="filter-chip is-active" data-difficulty="all" type="button">All</button>
+          <button class="filter-chip" data-difficulty="Easy" type="button">Easy</button>
+          <button class="filter-chip" data-difficulty="Medium" type="button">Medium</button>
+          <button class="filter-chip" data-difficulty="Hard" type="button">Hard</button>
+        </div>
+        <label class="select-wrap">
+          <span class="sr-only">Filter by pattern</span>
+          <select id="patternSelect"><option value="all">All patterns</option></select>
+        </label>
+        <label class="select-wrap">
+          <span class="sr-only">Filter by status</span>
+          <select id="statusSelect">
+            <option value="all">Any status</option>
+            <option value="todo">To do</option>
+            <option value="solved">Solved</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="pattern-index" aria-label="Pattern index">
+          <p class="index-label">Filter by pattern</p>
+          <div id="patternIndex"></div>
+        </aside>
+        <div class="problem-panel">
+          <div class="problem-table-head" aria-hidden="true">
+            <span>Status</span><span>Problem</span><span>Pattern</span><span>Difficulty</span><span></span>
+          </div>
+          <div id="problemList" class="problem-list" aria-live="polite"></div>
+          <button id="loadMoreButton" class="load-more" type="button" hidden>Show more problems</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section playbook" id="playbook" aria-labelledby="playbook-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Staff engineer playbook</p>
+          <h2 id="playbook-title">A query is a proof.</h2>
+        </div>
+        <p>Before optimizing, make the grain, invariants, edge cases, and tie-breaking rules explicit.</p>
+      </div>
+      <ol class="playbook-steps">
+        <li><span>01</span><div><h3>Declare the grain</h3><p>Write one sentence: “one output row represents…” Most wrong joins begin with an unstated grain.</p></div></li>
+        <li><span>02</span><div><h3>Sketch cardinality</h3><p>Mark every relationship as one-to-one, one-to-many, or many-to-many before joining.</p></div></li>
+        <li><span>03</span><div><h3>Choose the pattern</h3><p>Translate the prompt into ranking, anti-join, rolling window, gaps and islands, or another known shape.</p></div></li>
+        <li><span>04</span><div><h3>Design the counterexamples</h3><p>Test nulls, duplicates, empty groups, boundary dates, and ties—not just the happy path.</p></div></li>
+        <li><span>05</span><div><h3>Read the plan</h3><p>Use EXPLAIN, verify row estimates, and optimize the biggest cardinality reduction first.</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark" aria-hidden="true">SELECT</span><span>SQL Atlas</span></div>
+    <p>Problem names link to LeetCode. Reference solutions adapted from <a href="https://github.com/doocs/leetcode" target="_blank" rel="noreferrer">doocs/leetcode</a> under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog id="problemDialog" class="problem-dialog">
+    <div class="dialog-shell">
+      <button id="dialogClose" class="dialog-close" type="button" aria-label="Close problem">×</button>
+      <div id="dialogContent"></div>
+    </div>
+  </dialog>
+
+  <script src="data/patterns.js"></script>
+  <script src="data/tools.js"></script>
+  <script src="data/problems.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
