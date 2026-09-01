@@ -5,13 +5,37 @@ SQL Atlas is a pattern-first learning website for MySQL and PostgreSQL. It combi
 ## Open locally
 
 ```bash
-cd sql-patterns-site
-python3 -m http.server 4173
+npm run dev
 ```
 
 Then open [http://127.0.0.1:4106](http://127.0.0.1:4106).
 
-Run `npm test` from this repository root before deploying. For Vercel, select `sql-patterns-site` as the Root Directory and use the “Other” framework preset; no build command is required.
+Run `npm test` from this repository root before deploying.
+
+## Production deployment
+
+SQL Atlas is an independently deployed static site. Import this repository into Vercel with these project settings:
+
+- Root Directory: `sql-patterns-site`
+- Framework Preset: `Other`
+- Build Command: leave empty
+- Output Directory: leave empty
+
+Vercel can deploy the generated site directly because `index.html`, the browser assets, and the generated catalogs are committed. The GitHub Actions workflow runs the static-site tests for every pull request and every push to `main`.
+
+After the SQL deployment is available, configure its origin in the production environment of the `tech-lead.in` gateway:
+
+```dotenv
+SQL_ORIGIN=https://your-sql-deployment.example
+```
+
+Also configure the independently deployed candidate workspace:
+
+```dotenv
+CANDIDATE_ORIGIN=https://your-candidate-workspace.example
+```
+
+Redeploy `tech-lead.in` after changing either origin because its gateway routes are created from these values. Verify the composed production URL at `https://tech-lead.in/candidate/learn/sql/`.
 
 When composed by tech-lead.in, the gateway exposes the same static deployment at `/candidate/learn/sql/`. All browser assets intentionally use relative URLs so no second SQL build or copy is required.
 

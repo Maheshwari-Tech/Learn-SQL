@@ -25,3 +25,11 @@ test("ships the generated problem and pattern catalogs", async () => {
   await access(path.join(siteRoot, "data", "problems.js"));
   await access(path.join(siteRoot, "data", "tools.js"));
 });
+
+test("canonicalizes the production site with trailing slashes", async () => {
+  const configuration = JSON.parse(
+    await readFile(path.join(siteRoot, "vercel.json"), "utf8"),
+  );
+
+  assert.equal(configuration.trailingSlash, true);
+});
