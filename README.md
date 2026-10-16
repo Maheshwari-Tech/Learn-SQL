@@ -26,7 +26,7 @@ Vercel can deploy the generated site directly because `index.html`, the browser 
 After the SQL deployment is available, configure its origin in the production environment of the `tech-lead.in` gateway:
 
 ```dotenv
-SQL_ORIGIN=https://your-sql-deployment.example
+SQL_ORIGIN=https://learn-sql-opal.vercel.app
 ```
 
 Also configure the independently deployed candidate workspace:
